@@ -92,7 +92,7 @@ body {
 }
 
 .divider-line {
-    width: 100%;
+    width: 1216px;
     height: 1px;
     background-color: #EAECEE;
 }
@@ -115,10 +115,9 @@ body {
 
 .main-nav {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     gap: 20px;
     height: 100%;
-    padding-bottom: 16px;
 }
 
 .primary-link {
@@ -132,7 +131,7 @@ body {
 }
 
 .primary-link:hover {
-    color: #0F3A8C;
+    color: #003790;
 }
 
 .header-actions {
@@ -146,7 +145,7 @@ body {
     font-weight: 400;
     font-size: 13px;
     line-height: 16px;
-    color: #0F3A8C;
+    color: #003790;
     text-decoration: none;
 }
 
@@ -156,7 +155,7 @@ body {
     background-color: #EAECEE;
 }
 
-.client-link, .login-link {
+.client-link {
     display: flex;
     align-items: center;
     gap: 6px;
@@ -164,12 +163,20 @@ body {
     font-weight: 600;
     font-size: 13px;
     line-height: 16px;
-    color: #0F3A8C;
+    color: #003790;
     text-decoration: none;
 }
 
 .login-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
     color: #101010;
+    text-decoration: none;
 }
 
 /* Hero Slider Section */
@@ -183,23 +190,22 @@ body {
 
 .hero-banner {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     width: 1440px;
     background-color: #D4E6F5;
     border-radius: 24px;
     padding: 0 112px;
     position: relative;
     overflow: hidden;
-    min-height: 480px;
-    gap: 24px;
+    height: 480px;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    flex: 1;
-    align-self: stretch;
+    width: 700px;
+    z-index: 1;
     padding: 88px 0 0;
 }
 
@@ -235,7 +241,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 15px 48px 17px;
+    height: 54px;
+    padding: 0 48px;
     border-radius: 12px;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
@@ -243,7 +250,7 @@ body {
     line-height: 24px;
     cursor: pointer;
     border: none;
-    transition: background-color 0.2s;
+    transition: all 0.2s;
 }
 
 .btn-primary {
@@ -256,22 +263,25 @@ body {
 }
 
 .btn-secondary {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.4);
     color: #101010;
-    border: 1px solid rgba(16, 16, 16, 0.2);
+    border: none;
 }
 
 .btn-secondary:hover {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.6);
 }
 
 .hero-image-wrapper {
+    position: absolute;
+    right: 115px;
+    top: 0;
+    width: 480px;
+    height: 480px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 486px;
-    height: 480px;
-    flex-shrink: 0;
+    pointer-events: none;
 }
 
 .celebrity-img {
@@ -295,50 +305,66 @@ body {
 .feature-card {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     gap: 4px;
-    padding: 24px;
+    padding: 25px 24px 23px;
     flex: 1;
     height: 114px;
     border-right: 1px solid #EAECEE;
     text-decoration: none;
+    color: inherit;
     transition: background-color 0.2s;
+    position: relative;
+}
 
-    &:last-child {
-        border-right: none;
-        border-radius: 0 20px 20px 0;
-    }
+.feature-card:first-child {
+    border-radius: 20px 0 0 20px;
+}
 
-    &:first-child {
-        border-radius: 20px 0 0 20px;
-    }
+.feature-card:last-child {
+    border-right: none;
+    border-radius: 0 20px 20px 0;
+}
 
-    &:hover {
-        background-color: #F6F8FB;
-    }
+.feature-card:hover {
+    background-color: #F6F8FB;
+}
 
-    &_active {
-        background-color: #FFFFFF;
-        box-shadow: 0 5px 100px rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
-        border-right: none;
-        z-index: 1;
-    }
+.feature-card.feature-card_active {
+    background-color: #FFFFFF;
+    box-shadow: 0 5px 100px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    border-right: none;
+    z-index: 1;
+}
 
-    &__title {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 600;
-        font-size: 15px;
-        line-height: 20px;
-        color: #101010;
-    }
+.feature-card.feature-card_active::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 7px solid #FFFFFF;
+}
 
-    &__desc {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 18px;
-        color: #5A6E85;
-    }
+.feature-card__title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    color: #101010;
+}
+
+.feature-card__desc {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 18px;
+    color: #5A6E85;
 }
 
 /* Секция популярных продуктов */
@@ -346,8 +372,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 1216px;
-    margin: 80px 0 48px;
-    gap: 32px;
+    margin: 82px 0 48px;
+    gap: 26px;
 }
 
 /* Заголовок секции */
@@ -356,21 +382,21 @@ body {
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    gap: 24px;
+    gap: 20px;
 }
 
 .section-title {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     font-size: 28px;
-    line-height: 40px;
+    line-height: 36px;
     color: #101010;
 }
 
 /* Переключатель сегментов */
 .segment-button {
     display: flex;
-    padding: 2px;
+    padding: 3px;
     background-color: #F6F8FB;
     border-radius: 12px;
     gap: 4px;
@@ -379,29 +405,30 @@ body {
 .segment-item {
     display: flex;
     align-items: center;
-    padding: 12px 16px;
+    padding: 10px 20px;
     border-radius: 10px;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
+    font-size: 15px;
+    line-height: 20px;
     color: #5A6E85;
     background: none;
     border: none;
     cursor: pointer;
     transition: all 0.2s;
+}
 
-    &.active {
-        background-color: #242839;
-        color: #FFFFFF;
-    }
+.segment-item.active {
+    background-color: #1F2229;
+    color: #FFFFFF;
+    font-weight: 500;
 }
 
 /* Сетка продуктов */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 16px;
+    gap: 24px;
     width: 100%;
 }
 
@@ -409,19 +436,18 @@ body {
 .product-card {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background-color: transparent;
     border-radius: 0;
     padding: 0;
-    gap: 12px;
+    gap: 16px;
     cursor: pointer;
     min-width: 0;
+    text-decoration: none;
+}
 
-    &:hover {
-        .product-img-container {
-            background-color: #EFF5FF;
-        }
-    }
+.product-card:hover .product-img-container {
+    background-color: #EFF5FF;
 }
 
 /* Контейнер изображения продукта */
@@ -430,25 +456,27 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
-    aspect-ratio: 1;
+    height: 170px;
     flex-shrink: 0;
     background-color: #F6F8FB;
     border-radius: 16px;
-    padding: 20px;
+    padding: 10px;
     overflow: hidden;
     transition: background-color 0.2s;
+}
 
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-    }
+.product-img-container img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
 }
 
 /* Информация о продукте */
 .product-info {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
     gap: 4px;
     min-width: 0;
     width: 100%;
@@ -463,6 +491,7 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
 }
 
 .product-desc {
@@ -474,4 +503,5 @@ body {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width: 100%;
 }

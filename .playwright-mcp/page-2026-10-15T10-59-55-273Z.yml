@@ -1,0 +1,112 @@
+- generic [ref=f3e2]:
+  - banner [ref=f3e3]:
+    - generic [ref=f3e4]:
+      - navigation [ref=f3e21]:
+        - link "Частным клиентам" [ref=f3e22] [cursor=pointer]:
+          - /url: "#"
+        - link "Малому бизнесу и ИП" [ref=f3e23] [cursor=pointer]:
+          - /url: "#"
+        - link "Корпоративным клиентам" [ref=f3e24] [cursor=pointer]:
+          - /url: "#"
+        - link "Инвестбанк" [ref=f3e25] [cursor=pointer]:
+          - /url: "#"
+        - link "Акционерам и инвесторам" [ref=f3e26] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f3e27]:
+        - link "Офисы и банкоматы" [ref=f3e28] [cursor=pointer]:
+          - /url: "#"
+        - link "Помощь" [ref=f3e32] [cursor=pointer]:
+          - /url: "#"
+    - generic [ref=f3e38]:
+      - navigation [ref=f3e39]:
+        - link "Кредиты" [ref=f3e40] [cursor=pointer]:
+          - /url: "#"
+        - link "Карты" [ref=f3e41] [cursor=pointer]:
+          - /url: "#"
+        - link "Ипотека" [ref=f3e42] [cursor=pointer]:
+          - /url: "#"
+        - link "Вклады" [ref=f3e43] [cursor=pointer]:
+          - /url: "#"
+        - link "Инвестиции" [ref=f3e44] [cursor=pointer]:
+          - /url: "#"
+        - link "Обмен валют" [ref=f3e45] [cursor=pointer]:
+          - /url: "#"
+        - link "Платежи" [ref=f3e46] [cursor=pointer]:
+          - /url: "#"
+        - link "Сервисы" [ref=f3e47] [cursor=pointer]:
+          - /url: "#"
+        - link "Premium" [ref=f3e48] [cursor=pointer]:
+          - /url: "#"
+        - link "Еще" [ref=f3e49] [cursor=pointer]:
+          - /url: "#"
+      - generic [ref=f3e50]:
+        - link "8 800 100-00-06" [ref=f3e51] [cursor=pointer]:
+          - /url: tel:88001000006
+        - link "Стать клиентом" [ref=f3e53] [cursor=pointer]:
+          - /url: "#"
+        - link "Войти" [ref=f3e57] [cursor=pointer]:
+          - /url: "#"
+  - main [ref=f3e62]:
+    - generic [ref=f3e63]:
+      - generic [ref=f3e64]:
+        - generic [ref=f3e65]:
+          - heading "Бесплатные кредитные карты" [level=1] [ref=f3e66]
+          - paragraph [ref=f3e67]: Рефинансирование на 24 месяца
+        - generic [ref=f3e68]:
+          - button "Оформить" [ref=f3e69] [cursor=pointer]
+          - button "Подробнее" [ref=f3e70] [cursor=pointer]
+      - img "Селебрити" [ref=f3e72]
+    - generic [ref=f3e73]:
+      - link "Бесплатные кредитные карты Рефинансирование на 24 месяца" [ref=f3e74] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e75]: Бесплатные кредитные карты
+        - generic [ref=f3e76]: Рефинансирование на 24 месяца
+      - link "Денежные кредиты Рефинансирование на 24 мес. без %" [ref=f3e77] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e78]: Денежные кредиты
+        - generic [ref=f3e79]: Рефинансирование на 24 мес. без %
+      - link "Рефинансирование кредиток На 24 месяца с картой «Халва»" [ref=f3e80] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e81]: Рефинансирование кредиток
+        - generic [ref=f3e82]: На 24 месяца с картой «Халва»
+      - link "Успешный успех Счёт для бизнеса с выгодным обслуживанием навсегда" [ref=f3e83] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=f3e84]: Успешный успех
+        - generic [ref=f3e85]: Счёт для бизнеса с выгодным обслуживанием навсегда
+    - generic [ref=f3e86]:
+      - generic [ref=f3e87]:
+        - heading "Популярные продукты" [level=2] [ref=f3e88]
+        - generic [ref=f3e89]:
+          - button "Частным клиентам" [ref=f3e90] [cursor=pointer]
+          - button "Бизнесу" [ref=f3e91] [cursor=pointer]
+      - generic [ref=f3e92]:
+        - generic [ref=f3e93] [cursor=pointer]:
+          - img "Дебетовые карты" [ref=f3e95]
+          - generic [ref=f3e96]:
+            - generic [ref=f3e97]: Дебетовые карты
+            - generic [ref=f3e98]: До 30% кешбэка
+        - generic [ref=f3e99] [cursor=pointer]:
+          - img "Карта Халва" [ref=f3e101]
+          - generic [ref=f3e102]:
+            - generic [ref=f3e103]: Карта Халва
+            - generic [ref=f3e104]: До 24 месяцев рассрочки
+        - generic [ref=f3e105] [cursor=pointer]:
+          - img "Кредиты наличными" [ref=f3e107]
+          - generic [ref=f3e108]:
+            - generic [ref=f3e109]: Кредиты наличными
+            - generic [ref=f3e110]: До 5 млн ₽
+        - generic [ref=f3e111] [cursor=pointer]:
+          - img "Кредиты под залог" [ref=f3e113]
+          - generic [ref=f3e114]:
+            - generic [ref=f3e115]: Кредиты под залог
+            - generic [ref=f3e116]: Оформите онлайн
+        - generic [ref=f3e117] [cursor=pointer]:
+          - img "Вклады" [ref=f3e119]
+          - generic [ref=f3e120]:
+            - generic [ref=f3e121]: Вклады
+            - generic [ref=f3e122]: Доход с первого месяца
+        - generic [ref=f3e123] [cursor=pointer]:
+          - img "Ипотека" [ref=f3e125]
+          - generic [ref=f3e126]:
+            - generic [ref=f3e127]: Ипотека
+            - generic [ref=f3e128]: До 50 млн ₽
